@@ -3,11 +3,13 @@
 :root {
   color-scheme: light;
   --canvas: #e6eff5;
-  --teal: #2ab3b1;
-  --teal-light: #4abfbd;
+  --teal: #087674;
+  --teal-light: #12827f;
   --lime: #c0df33;
   --lime-dark: #a6c41f;
-  --gray: #9aa7be;
+  --lime-text: #627316;
+  --button-text: #304c4b;
+  --gray: #65728b;
   --footer: #4f5d73;
   --white: #ffffff;
   --shadow: 0 15px 30px rgb(0 81 171 / .15);
@@ -26,23 +28,23 @@ main { min-height: calc(100svh - 4.5rem); display: grid; place-items: center; pa
 
 .community { background: var(--white); }
 .community h1 { color: var(--teal); font-size: 1.5rem; line-height: 1.17; }
-.guarantee { margin-top: 1.5rem !important; color: var(--lime); font-size: 1.125rem; font-weight: 700; line-height: 1.33; letter-spacing: -.22px; }
+.guarantee { margin-top: 1.5rem !important; color: var(--lime-text); font-size: 1.125rem; font-weight: 700; line-height: 1.33; letter-spacing: -.22px; }
 .pitch { margin-top: .5rem !important; color: var(--gray); font-size: 1rem; line-height: 1.625; letter-spacing: -.2px; }
 
 .subscription { background: var(--teal); color: var(--white); }
 .subscription h2, .why-us h2 { font-size: 1.125rem; line-height: 1.17; letter-spacing: -.22px; }
 .price { display: flex; align-items: center; gap: .5rem; margin-top: 1rem !important; }
 .amount { font-size: 2rem; font-weight: 700; line-height: 1.17; letter-spacing: -.4px; }
-.period { font-size: 1rem; line-height: 1.625; opacity: .5; }
+.period { font-size: 1rem; line-height: 1.625; opacity: 1; }
 .value { font-size: 1rem; line-height: 1.625; letter-spacing: -.2px; }
-.sign-up { display: block; width: 100%; min-height: 3rem; margin-top: 1.8125rem; border: 0; border-radius: .3125rem; background: var(--lime); box-shadow: 0 10px 10px rgb(0 0 0 / .1); color: var(--white); font: inherit; font-weight: 700; letter-spacing: -.2px; cursor: pointer; }
+.sign-up { display: block; width: 100%; min-height: 3rem; margin-top: 1.8125rem; border: 0; border-radius: .3125rem; background: var(--lime); box-shadow: 0 10px 10px rgb(0 0 0 / .1); color: var(--button-text); font: inherit; font-weight: 700; letter-spacing: -.2px; cursor: pointer; }
 .sign-up:hover { background: var(--lime-dark); }
 .sign-up:focus-visible { outline-color: var(--white); }
 .sign-up-status { min-height: 0; font-size: 1rem; line-height: 1.5; }
 .sign-up-status:not(:empty) { margin-top: .75rem !important; }
 
 .why-us { background: var(--teal-light); color: var(--white); }
-.why-us ul { margin-top: 1rem; padding: 0; list-style: none; font-size: 1rem; line-height: 1.5; opacity: .75; }
+.why-us ul { margin-top: 1rem; padding: 0; list-style: none; font-size: 1rem; line-height: 1.5; opacity: 1; }
 
 footer { padding: 0 1.5rem 1.5rem; font-size: 1rem; line-height: 1.5; text-align: center; text-wrap: balance; }
 footer a { display: inline-block; min-height: 2.75rem; padding-block: .625rem; }

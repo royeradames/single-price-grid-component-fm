@@ -18,6 +18,6 @@ Original challenge files are preserved under `reference/`; the favicon moved byt
 
 - The Why Us list is 14px in the design; the family 16px floor raises it to 16px.
 - The design has no hover state for Sign Up; hover darkens the lime and keyboard focus draws a white ring.
-- White on lime (Sign Up) and lime on white (the guarantee line) are the official palette and are kept for fidelity, though their contrast is below WCAG AA.
-- One site name, "Single price grid component", appears in the footer, `og:site_name` and `WebSite` JSON-LD. The canonical URL is the planned `single-price-grid-component-fm.royeradames.com` production domain, which isn't attached yet.
+- Teal panels and pitch gray use darker shades of the supplied palette. The guarantee uses a darker lime shade, and Sign Up keeps its lime background with dark teal text. Price-period and benefit-list text are opaque so they remain readable. Rendered contrast regressions cover the default, hover and honest demo status states at mobile, tablet and desktop widths.
+- One site name, "Single price grid component", appears in the footer, `og:site_name` and `WebSite` JSON-LD. The canonical URL is `single-price-grid-component-fm.royeradames.com`.
 - Where the Figma frames and the supplied JPGs disagree, the decoded Figma wins (635px card on tablet and desktop, 311px on mobile, 216px community panel on desktop). The lower panels are taller than Figma's 259px because the 16px list floor adds about 28px.

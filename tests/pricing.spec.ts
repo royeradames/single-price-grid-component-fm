@@ -26,13 +26,13 @@ test("declares one site name in the footer, og:site_name and WebSite JSON-LD", a
   expect(jsonLd).toEqual({ "@context": "https://schema.org", "@type": "WebSite", name: "Single price grid component", url: "https://single-price-grid-component-fm.royeradames.com" });
 });
 
-test("uses the style guide colours for each panel", async ({ page }) => {
+test("uses readable shades of the supplied palette", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".community")).toHaveCSS("background-color", "rgb(255, 255, 255)");
-  await expect(page.getByRole("region", { name: "Monthly Subscription" })).toHaveCSS("background-color", "rgb(42, 179, 177)");
-  await expect(page.getByRole("region", { name: "Why Us" })).toHaveCSS("background-color", "rgb(74, 191, 189)");
-  await expect(page.getByRole("heading", { name: "Join our community" })).toHaveCSS("color", "rgb(42, 179, 177)");
-  await expect(page.getByText("30-day, hassle-free money back guarantee")).toHaveCSS("color", "rgb(192, 223, 51)");
+  await expect(page.getByRole("region", { name: "Monthly Subscription" })).toHaveCSS("background-color", "rgb(8, 118, 116)");
+  await expect(page.getByRole("region", { name: "Why Us" })).toHaveCSS("background-color", "rgb(18, 130, 127)");
+  await expect(page.getByRole("heading", { name: "Join our community" })).toHaveCSS("color", "rgb(8, 118, 116)");
+  await expect(page.getByText("30-day, hassle-free money back guarantee")).toHaveCSS("color", "rgb(98, 115, 22)");
 });
 
 test("sign up is an honest demo with hover and keyboard states", async ({ page }) => {
